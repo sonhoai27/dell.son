@@ -1,0 +1,109 @@
+.white {
+    color: #fff;
+}
+.center-flex {
+    align-items: center;
+    display: flex;
+}
+.primary-menu {
+    background: #0087c7;
+    padding: 16px 0;
+}
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search input {
+    width: 100%;
+    border: none;
+    padding: 8px;
+    -webkit-border-radius: 2px 0px 0px 2px;
+    -moz-border-radius: 2px 0px 0px 2px;
+    border-radius: 2px 0px 0px 2px;
+}
+
+.search .icon-search {
+    background: #fff;
+    padding: 10.5px;
+    border: none;
+}
+.search input:hover,
+.search input:focus {
+    outline: none;
+}
+.primary-menu .home-icon {
+    display: inline-flex;
+    align-items: center;
+}
+.primary-menu .home-icon:before {
+    font-size: 30px;
+    font-weight: 500;
+}
+.header-cart {
+    display: inline;
+}
+
+.NavBar {
+    width: 100%;
+    display: block;
+    box-shadow: 0px 2px 40px 0px rgba(0,0,0,0.08);
+    background: #fff;
+}
+
+.NavBar .menu {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.NavBar .menu>li {
+    font-weight: 500;
+    padding: 8px 16px;
+    transition: all .3s;
+    position: relative;
+}
+.NavBar .menu>li:hover{
+    background: #0087c7;
+    cursor: pointer;
+}
+.NavBar .menu>li>a{
+    font-size: 16px;
+}
+.NavBar .menu>li:hover a{
+    color: #fff;
+}
+
+.NavBar .menu#sub-menu {
+    display: none!important;
+    all: unset;
+}
+.NavBar .menu>li:hover>#sub-menu {
+    display: block!important;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    background: #0087c7;
+    margin-top: 8px;
+}
+.NavBar .menu>li:hover #sub-menu li {
+    transition: all .3s;
+}
+.NavBar .menu>li:hover #sub-menu li>a{
+    color:#fff;
+    transition: all .3s;
+}
+.NavBar .menu>li:hover #sub-menu li:hover {
+    background: #fff;
+}
+.NavBar .menu>li:hover #sub-menu li:hover>a{
+    color: #0087c7;
+}
+.NavBar .menu #sub-menu #sub-menu{
+    position: absolute;
+    left: 100%;
+    top: 0;
+    margin-top: 0;
+}
